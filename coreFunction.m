@@ -29,7 +29,7 @@ for seqIndex=1:size(rtSeqs,1)
     miracleTableRTdiff(seqIndex,:)=miracle;
 end
 
-blockMiracle=[nanmean(miracleTableRT)' nanmean(miracleTableRTdiff)'];
+blockMiracle=[nansum(miracleTableRT)' nansum(miracleTableRTdiff)'];
 
 miracleTable.miracleTableRT=miracleTableRT;
 miracleTable.miracleTableRTdiff=miracleTableRTdiff;
